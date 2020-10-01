@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
@@ -33,9 +33,34 @@
       width: 30px;
       height: 30px;
     }
+
     .logos2 {
      width: 50px;
      height: 50px;
+    }
+
+    .logo3 {
+      height: 50px;
+    }
+
+    .infoysalud {
+      background-color: #fff;
+      padding: 50px;
+      border-radius: 30px;
+      margin: 30px 20px;
+    }
+
+    .infoysaludimg {
+      text-align: center;
+    }
+
+    .saludimg {
+      border-radius: 30px;
+      max-width: 700px;
+    }
+    .botoninvent {
+      text-align: center;
+      margin-bottom: 50px;
     }
 
   </style>
@@ -53,8 +78,8 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top header-transparent">
     <div class="container d-flex align-items-center">
-<a href="index.html">
-      <img src="assets/img/vitagellogo1.png" alt="Vitagel logo" class="img-fluid">
+<a href="#hero">
+      <img src="assets/img/vitagellogo1.png" alt="Vitagel logo" class="img-fluid logo3">
       </a>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
@@ -62,10 +87,10 @@
       <nav class="main-nav d-none d-lg-block mainnav">
         <ul>
           
-          <li class="drop-down"><a href="">Productos</a>
+          <li class="drop-down"><a href="#">Productos</a>
             <ul>
               <li><a href="#services">Destacados</a></li>
-              <li><a href="#">Inventario</a></li>
+              <li><a href="inventario.html#">Inventario</a></li>
         </ul>
           </li>
           
@@ -81,9 +106,9 @@
           </ul>
           </li>
 
-          <li><a href="#" class="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#" class="#"><i class="fa fa-facebook d-none d-lg-block"></i></a></li>
 
-          <li><a href="#" class="#"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="#" class="#"><i class="fa fa-instagram d-none d-lg-block"></i></a></li>
         </ul>
       </nav><!-- .main-nav-->
 
@@ -119,10 +144,16 @@
 
         <header class="section-header">
           <h3>Productos destacados</h3>
-          <p>La mejor selección de productos para el higiene personal, protección antiviral y procedimientos médicos.</p>
+          <p>La mejor selección de productos para el higiene personal, protección antiviral y procedimientos médicos.</p>       
         </header>
 
         <div class="row">
+          
+
+          <div class="col-12 botoninvent">
+          <a href="inventario.html#"> <button type="button" class="btn btn-success">VER TODOS LOS PRODUCTOS</button></a>
+          </div>
+
 
           <div class="col-md-6 col-lg-4 wow bounceInUp" data-aos="zoom-in" data-aos-delay="100">
             <div class="box productosimg">
@@ -156,15 +187,6 @@
                 <br>Empaque de 10 unidades.</p>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 wow" data-aos="zoom-in" data-aos-delay="100">
-            <div class="box productosimg">
-              <img src="assets/img/productos/cintap.png" alt="cinta plástica" class="img-fluid">
-              <h4 class="title mt-4"><a href="">Cinta Plástica Multiuso.</a></h4>
-              <p class="description">cinta adhesiva para ductos, ideal para múltiples aplicaciones de sellado, sujeción, enmascarado, amarre, etc.
-                <br>Empaque de 72 unidades.</p>
-            </div>
-          </div>
-
           <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200"">
         <div class=" box productosimg">
             <img src="assets/img/productos/gel1.png" alt="gel antibacterial 100ml" class="img-fluid">
@@ -187,6 +209,109 @@
 
       </div>
     </section><!-- End Services Section -->
+
+        <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+
+          <div class="col-lg-5 col-md-6">
+            <div class="about-img" data-aos="fade-right" data-aos-delay="100">
+              <img src="assets/img/about-img.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-7 col-md-6">
+            <div class="about-content" data-aos="fade-left" data-aos-delay="100">
+              <h2>Nosotros</h2>
+              <h3>Amplia gama de soluciones en salud.</h3>
+              <p>Grupo Vitagel comprende una empresa que integra investigación, desarrollo, producción y ventas. </p>
+              <p>Ubicados en el centro del país teniéndo una ventaja geográfica sobre otras empresas. Nos dedicamos mayormente a la fabricación de desarrollo de productos desechables de uso médico, químicos antibacteriales y productos de higiene personal, etc. Nuestra gama de productos es amplia y están a la vanguardia con respecto a otros productos similares en cuanto a relación calidad-precio al mismo tiempo que ofrecemos productos personalizados de acuerdo a las necesidades del consumidor.</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- End About Section -->
+
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container-fluid" data-aos="fade-up">
+
+        <header class="section-header">
+          <h3>Información y salud</h3>
+          <p>Durante una crisis sanitaria, las medidas de contención pueden producir efectos psicológicos negativos producto del aislamiento</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-12" data-aos="zoom-in" data-aos-delay="100">
+            <div class="why-us-img  infoysaludimg">
+              <img src="assets/img/crisiss.jpg" alt="" class="img-fluid saludimg">
+            </div>
+          </div>
+
+          <div class="col-12 infoysalud">
+            <div class="why-us-content">
+              <p>Los problemas de salud mental son más comunes de lo que parece. Aquí te dejamos algunos consejos para reducir el estrés y fomentar el bienestar.</p>
+
+              <div class="features clearfix" data-aos="fade-up" data-aos-delay="100">
+                <img src="assets/img/icons/respira.png">
+                <h4>Párate, respira y reflexiona</h4>
+                <p>Realiza varias respiraciones lentamente: toma aire por la nariz y expúlsalo despacio. Respirar de manera pausada es una de las mejores formas de reducir el estrés, ya que tu cerebro recibe la señal de que el cuerpo tiene que relajarse. Sé consciente de tus sensaciones y pensamientos, sin juzgarlos. En lugar de responder o reaccionar a ellos, identifícalos y deja que fluyan.</p>
+              </div>
+
+              <div class="features clearfix" data-aos="fade-up" data-aos-delay="200">
+                <img src="assets/img/icons/conecta.png">
+                <h4>Conecta con otras personas</h4>
+                <p>Hablar con personas en las que confías puede ser de gran ayuda. Mantente en contacto con tus más allegados, cuéntales cómo te sientes y comparte tus preocupaciones con ellos.</p>
+              </div>
+
+              <div class="features clearfix" data-aos="fade-up" data-aos-delay="300">
+                <img src="assets/img/icons/rutina.png">
+                <h4>Mantén una rutina saludable</h4>
+                <p><strong>Lo que te puede venir bien:</p></strong>
+                <ul>
+                  <li>Procura levantaete e irte a dormir a la misma hora todos los días.</li>
+                  <li>Mantén una higiene personal adecuada.</li>
+                  <li>Lleva una dieta saludable en un horario habitual.</li>
+                  <li>Haz ejercicio con regularidad. Solo son necesarios de 3 a 4 minutos de ejercicio físico de baja intensidad, como paseos o estiramientos, para observar beneficios.</li>
+                  <li>Organízate para dedicar tiempo al trabajo, pero también al descanso.</li>
+                  <li>Reserva tiempo para hacer cosas que te gustan.</li>
+                  <li>Toma descansos frecuentes de las actividades frente a la pantalla.</li>
+                </ul>
+                <p><strong>Lo que debes evitar:</strong></p>
+                <ul>
+                  <li>No recurras al alcohol ni a las drogas para afrontar el miedo, la ansiedad, el aburrimiento o el aislamiento social</li>
+                </ul>
+              </div>
+
+              <div class="features clearfix" data-aos="fade-up" data-aos-delay="300">
+                <img src="assets/img/icons/amable.png">
+                <h4>Sé amable contigo y con los demás</h4>
+                <p>En días complicados, no te exijas demasiado. Acepta que hay días en los que tu productividad es mayor que en otros.
+                   <br>Intenta reducir el tiempo que pasas viendo, leyendo o escuchando noticias que te generan ansiedad o angustia. Infórmate de las novedades a través de fuentes fiables y a determinadas horas del día.
+                   <br>Ayudar a otras personas también puede beneficiarte. Si está en tus manos, ofrece apoyo a personas de tu entorno que puedan necesitarlo.</p>
+              </div>
+
+              <div class="features clearfix" data-aos="fade-up" data-aos-delay="300">
+                <img src="assets/img/icons/ayuda.png">
+                <h4>Pide ayuda si la necesitas</h4>
+                <p>No dudes en buscar ayuda profesional si crees que la necesitas. Puedes empezar por hablar con tu médico. Los teléfonos de ayuda también pueden ser un buen recurso si necesitas apoyo.</p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Why Us Section -->
 
     
 
